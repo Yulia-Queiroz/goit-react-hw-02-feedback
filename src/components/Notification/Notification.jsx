@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const messageStyles = {
-  fontSize: '20px',
-  fontWeight: '600',
-};
+const Message = styled.p`
+  font-size: 20px;
+  font-weight: 500;
+`;
 
 const Notification = ({ message }) => {
-  return <p style={messageStyles}>{message}</p>;
+  return <Message>{message}</Message>;
 };
 
 Notification.propTypes = {
